@@ -1,0 +1,178 @@
+<title>Flow Data Model Tools HELP</title>
+
+<body bgcolor="ffffff">
+
+<center>
+<hr width=500>
+<p>
+<img src="helparrows.jpg" alt="small graphics logo"><br>
+<b>Flow Data Model Tools for ArcGIS Help<br></b>
+<p>
+<hr width=500>
+</center>
+<p>
+
+<div align="center">
+<table border=0 cellpadding=0 cellspacing=0 width="670">
+
+
+
+<p>
+<b>Introduction</b><p>
+
+The Flow Data Model Tools (FDMT) consist of several Visual Basic for Applications (VBA) macros designed to work in ArcGIS 9 ArcMap, with an ArcView, ArcEditor, or ArcInfo license. 
+They were created to perform two functions: integrate the functionality of Waldo Tobler's FlowMapper into ArcGIS, and allow import and export of data into the Flow Data Model. For information on FlowMapper, visit the FlowMapper <a href="http://csiss.ncgia.ucsb.edu/clearinghouse/FlowMapper/"><b>website</b></a>.
+For information on the Flow Data Model, visit the Flow Data Model <a href="http://dynamicgeography.ou.edu/flow"><b>website</b></a>.
+
+<p>
+<b>Getting Started</b>
+<p>
+To use the FMDT, double-click the file, flowtoolsv069m.mxd,
+from ArcCatalog or Windows Explorer, or start ArcMap and open it. 
+
+<p>
+In that map document, a new, custom button called Flow Data Model Tools is
+added to the ArcMap Standard toolbar. Clicking the button, which is a right
+triangle and two lines connecting three dots, opens the Flow Data Model
+Tools dialog box. The left side of the dialog box is for importing
+interaction and coordinate data and creating flow lines from them, while the
+right side contains tools for interacting with the Flow Data Model. 
+<p>
+To make the flow line drawing process better incorporate the Flow Data
+Model, creating flow lines from input data is divided into three tasks that
+are identified by the numbers 1, 2, and 3 on the left side of the dialog
+box. The first, Import Interaction Table, uses text files to create a new
+standalone table containing an input point identifier, an output point
+identifier, and a magnitude value inside a geodatabase. The second step,
+Create Points from Table, uses the table to create a point shapefile that
+retains the points' identifier values. The third step, Create Flow Lines,
+uses the point shapefile and the table to create net, gross, or two-way flow
+lines in a new polyline shapefile (Figure 1).
+<p>
+
+<center>
+<hr width=500>
+
+<img src="flowexplanation.jpg"><br>
+Figure 1. Net, Gross, and Two-way Flow<p>
+
+<hr width=500>
+</center>
+
+<p>
+
+The typical workflow for creating flow lines from input coordinates and an
+interaction matrix would be to: 
+<p>
+<ul>
+
+<li>	preprocess the text data to ensure a space-delimited input file
+<li>	perform step 1
+<li>	add the output table to ArcMap
+<li>	perform step 2
+<li>	add the output point shapefile to ArcMap
+<li>	perform step 3
+<li>	add the output polyline shapefile
+<li>	modify the symbology of the derived polylines as desired
+</ul>
+
+<p>
+
+<center>
+<hr width=500>
+</center>
+
+<p>
+
+<b>Tools</b>
+<p>
+
+Preprocess:<br>
+Preprocessing may be needed to successfully import text files into the FDMT.
+While the Import Interaction Table task requires files to be formatted in
+the style of Flow Mapper, they must be delimited with a single space in the
+FDMT. Since recent versions of Flow Mapper have allowed commas, tabs, and
+multiples spaces to delineate text data, the Preprocess tool removes commas,
+tables, and redundant spaces from otherwise well-formatted Flow Mapper
+files. 
+<p>
+
+New GDB:<br>
+This tool creates an empty geodatabase with the Flow Data Model schema for
+cases with node-to-node flows.
+<p> 
+
+Export:<br>
+This tool finds the tables in the ArcMap table of contents and creates a
+table with from-to point identifiers and magnitudes. A portion of the Flow Data Model UML is displayed. Table and field names can be modified to match users’ existing data. 
+<p> 
+
+Import:<br>
+The Import tool uses a user-defined table and creates and populates the
+relevant portions of a new Flow Data Model. The table requires an input
+point identifier value, and output point identifier value, and a magnitude
+value.
+<p> 
+
+Help<br>
+The help includes this document. The "Online Help" button attempts to call the project's help website through Internet Explorer. From online help, users can navigate to to the Flow Data Model website for white papers, updates, and additional information.
+
+
+<p>
+<center>
+<p>
+<hr width=500>
+<p>
+</center>
+<p>
+
+<b>A few guidelines and known issues</b><p>
+
+1) FDMT requires input files to be loaded in the ArcMap table of contents.
+The exception is for interaction matrix and points text files.
+<p>
+2) When FDMT performs a function, it does not automatically add the output
+to ArcMap. 
+<p>
+3) The FDMT requires import text files to follow Tobler's Flow Mapper file
+format.
+<p>
+4) The FDMT preprocessor may have difficulty with import text files
+containing tabs.
+<p>
+5) The FDMT will not create directories. It will error or crash if a path
+does not already exist.
+<p>
+6) The FDMT has been designed for two-dimensional data. The code must be
+modified to use three-dimensional (z) values.
+<p>
+7) The FDMT currently works only with the node-to-node portions of the Flow
+Data Model. Flows along known routes (as defined in the Flow Data Model UML)
+have not yet been realized.
+<p>
+8) The FDMT requires "magnitude" to be a real, static value. Magnitude as a
+method (as shown in the model's UML) is not yet supported.
+
+
+
+<p>
+<center>
+<p>
+<hr width=500>
+<p>
+</center>
+<p>
+
+
+
+
+J. Alan Glennon<br>
+NCGIA/Department of Geography<br>
+University of California<br>
+Santa Barbara, CA 93106<p>
+
+<a href="http://www.alanglennon.com">www.alanglennon.com</a><br>
+glennon@umail.ucsb.edu<br>
+page created/updated: 7 January 2005/7 January 2005<br>
+</table>
+</div>
