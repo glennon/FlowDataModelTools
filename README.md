@@ -8,10 +8,13 @@ Description: a set of circa 2006 ArcGIS VB macros to create flow lines from a OD
 Flow Data Model Tools
 License
 
-Important Update #1, 10/2009: Due to the problem noted in Update #2, I reprogrammed the flow tools as a Python script. As such, the Flow Data Model Tools are now deprecated. Those tools still work, but are exceedingly quirky. To download and use Flowpy, visit: http://enj.com/software.
+Update #1, 10/2009: Due to the problem noted in Update #2, I reprogrammed the flow tools as a Python script. As such, the Flow Data Model Tools are now deprecated. Those tools still work, but are exceedingly quirky. To download and use Flowpy, visit: http://enj.com/software.
 
-Important Update #2, 7/2008: The software broke in 9.2/9.3, so we hardcoded an unsavory workaround to make it work.
+Update #2, 7/2008: The software broke in 9.2/9.3, so we hardcoded an unsavory workaround to make it work.
 To make the flow tools work, your files and output must be in the directory: "C:\temp\flow\"
+
+Update #3, 15 June 2013: If you're looking for FlowpyGIS, head over to its github repo. Any updates new stuff will be hosted on github. Its previous home (enj.com/software) will probably be repurposed before too long. I suppose I should update the license too. For now, enjoy the nostalgia of all caps.
+
 
 Copyright © 2004-2008 J. Alan Glennon, Department of Geography, University of California, Santa Barbara, CA 93106. All Rights Reserved.
 
