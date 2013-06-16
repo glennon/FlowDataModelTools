@@ -13,7 +13,7 @@ Update #1, 10/2009: Due to the problem noted in Update #2, I reprogrammed the fl
 Update #2, 7/2008: The software broke in 9.2/9.3, so we hardcoded an unsavory workaround to make it work.
 To make the flow tools work, your files and output must be in the directory: "C:\temp\flow\"
 
-Update #3, 15 June 2013: If you're looking for FlowpyGIS, head over to its github repo. Any updates new stuff will be hosted on github. Its previous home (enj.com/software) will probably be repurposed before too long. I suppose I should update the license too. For now, enjoy the nostalgia of all caps.
+Update #3, 15 June 2013: If you're looking for FlowpyGIS, head over to its github repo: https://github.com/glennon/FlowpyGIS. Any updates new stuff will be hosted on github. Its previous home (enj.com/software) will probably be repurposed before too long. I suppose I should update the license too. For now, enjoy the nostalgia of all caps. Be aware that the latest versions of ArcGIS no longer support VBA, so the FDMT scripts are virtually useless. Again, they are provided here only as an archive.
 
 
 Copyright © 2004-2008 J. Alan Glennon, Department of Geography, University of California, Santa Barbara, CA 93106. All Rights Reserved.
