@@ -3,7 +3,7 @@ FlowDataModelTools
 
 Description: a set of circa 2006 ArcGIS VB macros to create flow lines from a OD matrix. You basically just load up the .mxd file into ArcGIS and make the macros a tool. Replaced by flowpyGIS. The old support website can be found at: http://dynamicgeography.ou.edu/flow/
 
-
+==================
 
 Flow Data Model Tools
 License
@@ -15,6 +15,7 @@ To make the flow tools work, your files and output must be in the directory: "C:
 
 Update #3, 15 June 2013: If you're looking for FlowpyGIS, head over to its github repo: https://github.com/glennon/FlowpyGIS. Any updates new stuff will be hosted on github. Its previous home (enj.com/software) will probably be repurposed before too long. I suppose I should update the license too. For now, enjoy the nostalgia of all caps. Be aware that the latest versions of ArcGIS no longer support VBA, so the FDMT scripts are virtually useless. Again, they are provided here only as an archive.
 
+==================
 
 Copyright © 2004-2008 J. Alan Glennon, Department of Geography, University of California, Santa Barbara, CA 93106. All Rights Reserved.
 
