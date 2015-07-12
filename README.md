@@ -1,7 +1,7 @@
 FlowDataModelTools
 ==================
 
-Description: a set of circa 2006 ArcGIS VB macros to create flow lines from a OD matrix. You basically just load up the .mxd file into ArcGIS and make the macros a tool. Replaced by flowpyGIS. The old support website can be found on archive.org at: https://web.archive.org/web/20130427134141/http://dynamicgeography.ou.edu/flow
+Description: a set of circa 2006 ArcGIS VB macros to create flow lines from a OD matrix. You basically just load up the .mxd file into ArcGIS and make the macros a tool. Replaced by [flowpyGIS](http://github.com/glennon/FlowpyGIS). The old support website can be found on archive.org at: https://web.archive.org/web/20130427134141/http://dynamicgeography.ou.edu/flow
 
 ==================
 
